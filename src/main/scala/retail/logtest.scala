@@ -8,6 +8,7 @@ object logtest {
   def main(args: Array[String]): Unit = {
     val logger:Logger = Logger.getLogger("testlog")
     logger.info("please print a log, but it seems iti is not working")
+    print("changes in my test branch")
   }
 }
 
