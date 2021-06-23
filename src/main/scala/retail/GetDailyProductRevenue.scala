@@ -13,6 +13,7 @@ object GetDailyProductRevenue extends LogManager{
 
     val spark = SparkSession.builder().master("local").appName("gittestsparkapp").getOrCreate()
     println(spark.conf.getAll)
+    println("Fetched spark conf")
     val Logger :Logger = LogManager.getLogger
     val config = ConfigFactory.load()
    // val props = config.getConfig(args(0))
