@@ -19,7 +19,12 @@ object GetDailyProductRevenue extends LogManager{
    // val props = config.getConfig(args(0))
     //val path = props.getString("input.base.dir")
 Logger.info("Test Logging")
+<<<<<<< HEAD
 println("I have changed this file locally ")
+=======
+    println("someone trying to change file locally")
+
+>>>>>>> c26521bc72e2e7ee1a6aa2b996d4248138444e38
   //  println(path)
 
   }
