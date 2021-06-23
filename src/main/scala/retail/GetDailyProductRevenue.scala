@@ -10,12 +10,16 @@ object GetDailyProductRevenue extends LogManager{
 
 
   def main(args: Array[String]): Unit = {
+
+    val spark = SparkSession.builder().master("local").appName("gittestsparkapp").getOrCreate()
+    println(spark.conf.getAll)
     val Logger :Logger = LogManager.getLogger
     val config = ConfigFactory.load()
-    val props = config.getConfig(args(0))
-    val path = props.getString("input.base.dir")
+   // val props = config.getConfig(args(0))
+    //val path = props.getString("input.base.dir")
 Logger.info("Test Logging")
-    println(path)
+
+  //  println(path)
 
   }
 }
